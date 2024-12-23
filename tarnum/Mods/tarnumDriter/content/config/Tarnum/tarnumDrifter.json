@@ -1,0 +1,44 @@
+{
+	"tarnumTheDrifter" : {
+	    "female" : false,
+		"special" : false,
+		"army" : [
+			{ "creature" : "iceElemental", "max" : 8, "min" : 4},
+			{ "creature" : "iceElemental", "max" : 8, "min" : 4 },
+			{ "creature" : "iceElemental", "max" : 8, "min" : 4 }
+		],
+		"class" : "drifterM",
+		"spellbook" : [ "frostRing" ],
+		"battleImage" : "tarnum/TarnumDrifter/snowling.def",
+		"images" : {
+			"large" : "tarnum/TarnumDrifter/tarnumBig.png",
+			"small" : "tarnum/TarnumDrifter/tarnumSmall.png",
+			"specialtyLarge" : "tarnum/TarnumDrifter/t_spec44.png",
+			"specialtySmall" : "tarnum/TarnumDrifter/t_spec32.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "wisdom" },
+			{ "level" : "basic", "skill" : "waterMagic" },
+			{ "level" : "basic", "skill" : "firstAid" }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"castBlizz" : {
+					"val" : 1,
+					"subtype" : "spell.tBlizzard",
+					"type" : "OPENING_BATTLE_SPELL"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "When Tarnum finally beats Gelu to Volee, he discovers that the Sword of Frost has already been taken by Kija, who had escaped from her dungeon prison a few weeks earlier. Now he's wandering over the lands hoping The Reckoning will never happen.",
+			"name" : "Tarnum",
+			"specialty" : {
+				"description" : "Tarnum casts Whiteout at the start of combat.",
+				"name" : "Whiteout",
+				"tooltip" : "Whiteout"
+			}
+		}
+	}
+}
